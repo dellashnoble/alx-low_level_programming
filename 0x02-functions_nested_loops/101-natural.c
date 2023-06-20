@@ -16,7 +16,10 @@ int main(void)
 			sum += i;
 	}
 
-	print_number(sum);
+	_putchar(sum / 1000 + '0');
+	_putchar((sum / 100) % 10 + '0');
+	_putchar((sum / 10) % 10 + '0');
+	_putchar(sum % 10 + '0');
 	_putchar('\n');
 
 	return (0);
