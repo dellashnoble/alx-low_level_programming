@@ -10,12 +10,10 @@ int main(void)
 	int i;
 	unsigned long fib1 = 1, fib2 = 2, fib_next;
 
-	_putchar(fib1 / 10 + '0');
-	_putchar(fib1 % 10 + '0');
+	_putchar(fib1 + '0');
 	_putchar(',');
 	_putchar(' ');
-	_putchar(fib2 / 10 + '0');
-	_putchar(fib2 % 10 + '0');
+	_putchar(fib2 + '0');
 
 	for (i = 3; i <= 50; i++)
 	{
@@ -27,8 +25,7 @@ int main(void)
 			_putchar(' ');
 		}
 
-		_putchar(fib_next / 10 + '0');
-		_putchar(fib_next % 10 + '0');
+		_putchar(fib_next + '0');
 
 		fib1 = fib2;
 		fib2 = fib_next;
