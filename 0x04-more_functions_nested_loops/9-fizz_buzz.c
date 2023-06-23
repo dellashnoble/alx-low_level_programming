@@ -1,11 +1,12 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main - Entry point
  *
- * Description: Prints the numbers from 1 to 100 with certain conditions.
- * Multiples of three are replaced with "Fizz", multiples of five are replaced
- * with "Buzz", and multiples of both 3 and 5 are replaced with "FizzBuzz".
+ * Description: prints the numbers 1 - 100 w/
+ * Fizz for multiples of 3, Buzz for multiple of 5,
+ * and FizzBuzz for multiples of both
  *
  * Return: Always 0 (Success)
  */
@@ -15,14 +16,16 @@ int main(void)
 
 	for (i = 1; i <= 100; i++)
 	{
-		if (i % 3 == 0 && i % 5 == 0)
+		if (i % 15 == 0)
 			printf("FizzBuzz ");
 		else if (i % 3 == 0)
 			printf("Fizz ");
 		else if (i % 5 == 0)
 			printf("Buzz ");
 		else
-			printf("%d ", i);
+			printf("%i ", i);
+		if (i < 100)
+			printf("");
 	}
 
 	printf("\n");
