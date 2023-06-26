@@ -1,5 +1,5 @@
 #include <stdio.h>
-#incldue "main.h"
+#include "main.h"
 
 /**
  * string_length - Computes the length of a string.
