@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 int main(void)
 {
@@ -8,20 +8,12 @@ int main(void)
 
 	a[2] = 1024;
 	p = &n;
-	*(p + 5) = 98;
-	_putchar('a');
-	_putchar('[');
-	_putchar('2');
-	_putchar(']');
-	_putchar(' ');
-	_putchar('=');
-	_putchar(' ');
-	_putchar('0' + a[2] / 1000 % 10);
-	_putchar('0' + a[2] / 100 % 10);
-	_putchar('0' + a[2] / 10 % 10);
-	_putchar('0' + a[2] % 10);
-	_putchar('\n');
 
+	/* write your line of code here... */
+	*(&n + 12) = 98; /* Address arithmetic: n + 12 = &a[2] */
+	/*******************************/
+
+	printf("a[2] = %d\n", a[2]);
 	return (0);
 }
 
