@@ -9,7 +9,14 @@
  */
 void _puts(char *str)
 {
-	/* Function implementation */
+	int i = 0;
+
+	while (str[i] != '\0')
+	{
+		putchar(str[i]);
+		i++;
+	}
+	putchar('\n');
 }
 
 /**
@@ -19,7 +26,7 @@ void _puts(char *str)
  */
 int main(void)
 {
-	puts("\"Programming is like building a multilingual puzzle");
+	_puts("\"Programming is like building a multilingual puzzle");
 	return (0);
 }
 
